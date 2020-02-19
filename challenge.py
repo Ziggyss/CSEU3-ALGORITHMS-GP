@@ -21,10 +21,10 @@ def power_r(a, b):
     elif b > 0:   
         # Recursive case
         # Call the function on b - 1
-        return a * power_r(a, b - 1) #O(n)
+        return a * power_r(a, b - 1) #O(n) - this is a loop
     # Recursive negative exponent
     else:
         # return 1 divided by a multiplied by the function with -b - 1
-        return 1 / (a * power_r(a, -b - 1)) #O(n)
+        return 1 / (a * power_r(a, -b - 1)) #O(n) - this is a loop
         # or return 1 divided by function with -b
         # return 1 / power_r(a, -b)
